@@ -93,6 +93,7 @@ class MainViewController: UIViewController {
            return "\(num) \(t)"
        }
        
+       // for currency
        else if f == "Dollar" && t == "Indian Rupee" {
            
            let answer = "\(round(num * 66.30*100)/100) \(t)"
@@ -105,7 +106,8 @@ class MainViewController: UIViewController {
            return answer
            
        }
-           
+        
+       // for length
        else if f == "Meter" && t == "Centimeter" {
            
            let answer = "\(round(num * 100*100)/100) \(t)"
@@ -119,7 +121,7 @@ class MainViewController: UIViewController {
            return answer
            
        }
-           
+        // for temperature
        else if f == "Celsius" && t == "Fahrenheit" {
            
            let fahrenheit = round(((num * (9/5)) + 32)*100)/100
@@ -136,6 +138,7 @@ class MainViewController: UIViewController {
            
        }
        
+       // for volume
        else if f == "Gallon" && t == "Litre" {
            
            let litre = round((num * 3.785 ))
@@ -154,7 +157,7 @@ class MainViewController: UIViewController {
        
        else {
            
-           return "Boooo"
+           return "Invalid"
        }
        
    }

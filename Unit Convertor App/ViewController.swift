@@ -47,13 +47,13 @@ class ViewController: UIViewController {
                
            case 3 :
                
-               MainDestinationViewController.FromSegmentIndexOne = "Meter Cube"
+               MainDestinationViewController.FromSegmentIndexOne = "Litre"
                MainDestinationViewController.FromSegmentIndexTwo = "Gallon"
                MainDestinationViewController.ToSegmentIndexOne = "Litre"
                MainDestinationViewController.ToSegmentIndexTwo = "Gallon"
                
            default:
-               print ("Error  preparing ")
+               print ("Error")
                
                
            }
